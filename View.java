@@ -87,7 +87,7 @@ public class View {
         return position;
     }
 
-    // function to update the view with the correct mark and text
+
     public void update(int ligne, int colonne, char pions, String text) {
         CaseJeu[ligne][colonne].setText(Character.toString(pions));
         CaseJeu[ligne][colonne].setEnabled(false);
@@ -95,7 +95,6 @@ public class View {
 
     }
 
-    // function to freeze the view if there is a winner or Grille_du_jeu is tied
     public void checkGagnant(int ligne, int colonne, char pions, String text) {
         CaseJeu[ligne][colonne].setText(Character.toString(pions));
         CaseJeu[ligne][colonne].setEnabled(false);
